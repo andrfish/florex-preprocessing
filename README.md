@@ -24,10 +24,10 @@ proprocess raw text resumes contained in the file (data/resume_samples.txt).
 3. python -m spacy download en_core_web_sm
 
 4. python -i
-   import nltk
-   nltk.download('stopwords')
-   nltk.download('punkt')
-   exit()
+   - import nltk
+   - nltk.download('stopwords')
+   - nltk.download('punkt')
+   - exit()
    
 5. sudo apt install git-lfs
 
