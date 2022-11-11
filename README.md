@@ -17,6 +17,30 @@ proprocess raw text resumes contained in the file (data/resume_samples.txt).
 - gensim
 - spacy
 
+1. conda create -n resume python=3.7 && conda activate resume
+
+2. pip install spacy==2.0.5 scipy==1.4.1 numpy==1.14.3 nltk==3.6.3 gensim==3.8.3 pillow
+
+3. python -m spacy download en_core_web_sm
+
+4. python -i
+   import nltk
+   nltk.download('stopwords')
+   nltk.download('punkt')
+   exit()
+   
+5. sudo apt install git-lfs
+
+6. git clone https://github.com/florex/preprocessing && cd preprocessing && git lfs install
+
+7. sed --in-place 's/self.output_dir = "E:\/Thèse\/datasets\/dws\/"+str(self.cv_length)/self.output_dir = "output"/g' preprocessing/PreProcessor.py
+
+8. mkdir output
+
+9. python process_data.py
+
+
+
 # Execution :
 To preprocessed raw text resumes,   
 
